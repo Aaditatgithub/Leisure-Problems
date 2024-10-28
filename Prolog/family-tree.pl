@@ -1,6 +1,4 @@
-Here's the full code with placeholder names to replace the original ones while preserving all family relationships and relational predicates:
 
-```prolog
 % Defining people
 male(adam).
 male(jake).
