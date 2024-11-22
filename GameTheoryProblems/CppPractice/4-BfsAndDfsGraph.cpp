@@ -74,7 +74,7 @@ bool depthLimitedDFS(auto& cities, const string& curr_city, const string& dest,
 bool iddfs(auto& cities, const string& start, const string& dest, int max_depth){
     for(int depth = 1; depth <= max_depth; depth++){
         unordered_set<string> visited;
-        if(depthLimitedDFS(cities, start, dest, max_depth, visited)){
+        if(depthLimitedDFS(cities, start, dest, depth, visited)){
             cout << "Found " << dest << " at depth " << depth << endl; 
             return true;
         }
